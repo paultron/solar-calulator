@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.solar-calulator.CSharp.Plugins", "UnityVS.solar-calulator.CSharp.Plugins.csproj", "{C9E6E4B6-4A8F-DAAC-E8AE-A49D029DF07E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.solar-calulator.CSharp", "UnityVS.solar-calulator.CSharp.csproj", "{9CE53EC4-FDEF-9055-E41C-CFA088A7AA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.solar-calulator.CSharp.Editor", "UnityVS.solar-calulator.CSharp.Editor.csproj", "{2D3F0584-9013-7D9A-95A8-C600DF48B44F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9E6E4B6-4A8F-DAAC-E8AE-A49D029DF07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E6E4B6-4A8F-DAAC-E8AE-A49D029DF07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E6E4B6-4A8F-DAAC-E8AE-A49D029DF07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E6E4B6-4A8F-DAAC-E8AE-A49D029DF07E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE53EC4-FDEF-9055-E41C-CFA088A7AA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE53EC4-FDEF-9055-E41C-CFA088A7AA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE53EC4-FDEF-9055-E41C-CFA088A7AA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE53EC4-FDEF-9055-E41C-CFA088A7AA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3F0584-9013-7D9A-95A8-C600DF48B44F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3F0584-9013-7D9A-95A8-C600DF48B44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3F0584-9013-7D9A-95A8-C600DF48B44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3F0584-9013-7D9A-95A8-C600DF48B44F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

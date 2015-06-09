@@ -15,13 +15,13 @@ public class Calc1 : MonoBehaviour {
 
     IEnumerator Calculate()
     {
-        yield return new WaitForEndOfFrame();
         int.TryParse(electricBill.text, out billInt);
         yearsInt = (int)yearSlider.value;
-        numYears.text = ("" + yearsInt);
+        numYears.text = yearsInt.ToString();
         totalSpent = billInt * 12 * yearsInt;
         print("$" + totalSpent + " spent over " + yearsInt + " year(s).");
         result.text = ("$" + totalSpent + " spent over " + yearsInt + " year(s).");
+        yield return new WaitForEndOfFrame();
     }
 
     void OnEnable ()
