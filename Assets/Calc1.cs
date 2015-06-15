@@ -31,36 +31,36 @@ public class Calc1 : MonoBehaviour {
             //estimate monthly kwh usage
             kwhDoub = (billInt/.12125);
             //estimate daily kwh usage
-            kwhDoubDaily = kwhDoub/30;
+            kwhDoubDaily = kwhDoub/30.4;
             //estimate required kwh during peak sun hours
             kwhDoubPeak = kwhDoubDaily / 5.5;
             kwhNeed.text = (((int)kwhDoubPeak).ToString() + "kWh needed during peak sun hours.");
             //number of panels at 260W
             NumPanels = kwhDoubPeak / .260;
             //panel cost * 1.25
-            PanelCost = (NumPanels * 250) * 1.25;
+            PanelCost = (NumPanels * 250) * 1.25 * 1.25;
             estimatedCost.text = ("$" + ((int)PanelCost).ToString() + " estimated cost.");
             yield return new WaitForEndOfFrame();
         }
-        if (!isPaperBill)
+        else if (!isPaperBill)
         {
             //get input value monthly kWh 
             double tempDoub;
             int.TryParse(InputText.text, out kwhInt);
             //estimate daily kwh usage
-            kwhDoubDaily = kwhInt / 30;
+            kwhDoubDaily = kwhInt / 30.4;
             //estimate required kwh during peak sun hours
             kwhDoubPeak = kwhDoubDaily / 5.5;
             kwhNeed.text = (((int)kwhDoubPeak).ToString() + "kWh needed during peak sun hours.");
             //number of panels at 260W
             NumPanels = kwhDoubPeak / .260;
             //panel cost * 1.25
-            PanelCost = (NumPanels * 250) * 1.25;
+            PanelCost = ((NumPanels * 250) * 1.25) * 1.25;
             estimatedCost.text = ("$" + ((int)PanelCost).ToString() + " estimated cost.");
             if(kwhInt > 600)
             {
                 tempDoub = (kwhInt - 600)*.1399;
-                kwhInt = (int)tempDoub+70;
+                kwhInt = (int)tempDoub + 70;
             }
             else
             {
@@ -71,10 +71,6 @@ public class Calc1 : MonoBehaviour {
             result.text = ("$" + kwhInt * 12 * 15 + " spent over 15 year(s). $" + kwhInt * 12 * 30 + " spent over 30 year(s).");
             yield return new WaitForEndOfFrame();
         }
-
-
-
-
     }
 
     public void OnEnable ()
